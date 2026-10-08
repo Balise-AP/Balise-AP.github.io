@@ -135,6 +135,15 @@
   .fiche .num{font-family:var(--titre);font-size:18px;font-weight:600;color:var(--acier-sombre);padding-top:3px}
   .fiche h3{font-family:var(--titre);margin:0 0 4px;font-size:23px;font-weight:600}
   .fiche p{margin:0;color:var(--ardoise);font-size:16.5px;max-width:58ch}
+  .fiche h3 a{text-decoration:none}
+  .fiche h3 a:hover{color:var(--acier-sombre)}
+  .fiche .ouvrir{margin-top:9px}
+  .fiche .ouvrir a{
+    display:inline-flex;align-items:center;height:34px;padding:0 15px;
+    border:1px solid #C3CFD2;border-radius:3px;color:var(--acier-sombre);
+    text-decoration:none;font-size:15.5px;font-weight:600;
+  }
+  .fiche .ouvrir a:hover{background:#F0F6F8;border-color:var(--acier-sombre)}
   .etat{font-size:14.5px;font-weight:600;padding-top:5px;text-align:right}
   .e-ok{color:var(--vert)}
   .e-todo{color:var(--ambre)}
@@ -272,10 +281,11 @@
       <li class="fiche" data-cles="composants nomenclature stock commandes délai appro couverture manque rupture">
         <div class="num">02</div>
         <div>
-          <h3>La couverture des composants</h3>
+          <h3><a href="composants.html">La couverture des composants</a></h3>
           <p>Le plan éclaté par nomenclature, confronté au stock disponible, aux commandes en cours et aux délais d'approvisionnement.</p>
+          <p class="ouvrir"><a href="composants.html">Ouvrir l'outil</a></p>
         </div>
-        <div class="etat e-ok">Moteur prêt</div>
+        <div class="etat e-ok">En service</div>
       </li>
       <li class="fiche" data-cles="capacité heures équipe poste de charge dpx gamme charge">
         <div class="num">03</div>
